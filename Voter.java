@@ -1,34 +1,41 @@
-/**
- * @author Roger Ferguson
- */
 public class Voter {
-	private int tickTime;
-	private Booth Destination;
+    private int tickTime;
+    //the value of tick when the person enters a booth
+    private int boothInTime;
 
-	// max time person stays in line
-	protected double boothTime;
+    // max time person stays in line
+    protected double boothTime;
+    protected double checkInTime;
 
-	public double getBoothTime() {
-		return boothTime;
-	}
+    public double getBoothTime() {
+        return boothTime;
+    }
 
-	public Booth getDestination() {
-		return Destination;
-	}
+    public double getCheckInTime() {
+        return checkInTime;
+    }
 
-	public void setDestination(Booth destination) {
-		Destination = destination;
-	}
+    public int getTickTime() {
+        return tickTime;
+    }
 
-	public int getTickTime() {
-		return tickTime;
-	}
+    public void setTickTime(int tickTime) {
+        this.tickTime = tickTime;
+    }
 
-	public void setTickTime(int tickTime) {
-		this.tickTime = tickTime;
-	}
+    public void setBoothTime(double boothTime) {
+        this.boothTime = boothTime;
+    }
 
-	public void setBoothTime(double checkInTime) {
-		this.boothTime = checkInTime;
-	}
+    public void setCheckInTime(double checkInTime) {
+        this.checkInTime = checkInTime;
+    }
+
+    public int getBoothInTime() {
+        return boothInTime;
+    }
+
+    public void setBoothInTime(int boothInTime) {
+        this.boothInTime = boothInTime;
+    }
 }
